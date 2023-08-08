@@ -19,7 +19,7 @@ const SearchBox = () => {
 
   const submitSearch = () => {
     if (inputValue.length > 5) {
-      goToSearchSite(router, inputValue, "");
+      goToSearchSite(router, inputValue);
     }
   };
 
