@@ -1,10 +1,18 @@
 import dayjs from "dayjs";
 import { WiCloud } from "react-icons/wi";
 import { MdOutlineLocationOn } from "react-icons/md";
+import { useEffect, useState } from "react";
+import { useInterval } from "@mantine/hooks";
 const Clock = () => {
-  const time = dayjs().format("hh:mm");
   const month = dayjs().format("MMMM");
   const day = dayjs().format("Do");
+  const [time, setTime] = useState(dayjs().format("hh:mm"));
+  const interval = useInterval(() => setTime(dayjs().format("hh:mm")), 1000);
+
+  useEffect(() => {
+    interval.start();
+    return interval.stop;
+  }, []);
   return (
     <div className="relative mb-10 flex flex-col items-center p-2 font-askhar text-slate-300">
       <div className="mb-2 flex w-full items-center justify-between px-5 pl-2 md:mb-0 md:h-24 md:px-5 md:pl-2">
