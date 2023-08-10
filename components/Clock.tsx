@@ -23,7 +23,7 @@ const Clock = () => {
           <span className="text-xs font-medium md:text-xl">{day}</span>
         </div>
       </div>
-      <span className="bg-gradient-to-b from-[#39B5E0_50%] to-[rgb(0_0_0/.5)_80%] bg-clip-text text-9xl font-bold text-transparent opacity-40 md:text-[200px]">
+      <span className="bg-gradient-to-b from-[#39B5E0_50%] to-[rgb(0_0_0/.5)_80%] bg-clip-text text-9xl font-bold text-transparent opacity-70 md:text-[200px]">
         {time}
       </span>
     </div>
