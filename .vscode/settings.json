@@ -1,11 +1,3 @@
 {
-  "vitest.nodeEnv": {},
-  "tailwindCSS.classAttributes": [
-    "class",
-    "className",
-    "ngClass",
-    ".*Variants*", // Add ".*Styles*" (or whatever matches your naming scheme)
-    ".*style*",
-    ""
-  ]
+  "vitest.nodeEnv": {}
 }

@@ -45,6 +45,10 @@ module.exports = {
           950: "#041319",
         },
       },
+      fontFamily: {
+        askhar: "Akshar Variable, sans-serif",
+        sans: "Rubik Variable",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

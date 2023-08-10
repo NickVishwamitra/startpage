@@ -1,7 +1,10 @@
+@import "@fontsource-variable/akshar";
+@import '@fontsource-variable/rubik';
 @tailwind base;
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+// Supports weights 300-700
 
 :root {
   --foreground-rgb: 0, 0, 0;
